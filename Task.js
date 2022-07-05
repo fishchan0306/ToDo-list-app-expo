@@ -18,6 +18,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     marginBottom: 20,
+    borderRadius: 15,
+    height: 50,
   },
   itemLeft: {
     width: "100%",
@@ -27,6 +29,7 @@ const styles = StyleSheet.create({
   },
   itemText: {
     maxWidth: "80%",
+    fontSize: 20,
   },
 });
 

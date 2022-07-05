@@ -38,7 +38,7 @@ export default function App() {
       >
         {/* Today's Tasks */}
         <View style={styles.tasksWrapper}>
-          <Text style={styles.sectionTitle}>My First ToDo List in Expo</Text>
+          <Text style={styles.sectionTitle}>🤟🏻My First ToDo List in Expo🤟🏻</Text>
           <View style={styles.items}>
             {/* This is where the tasks will go! */}
             {taskItems.map((item, index) => {
@@ -63,13 +63,13 @@ export default function App() {
       >
         <TextInput
           style={styles.input}
-          placeholder={"Add new item"}
+          placeholder="Add new item"
           value={task}
           onChangeText={(text) => setTask(text)}
         />
         <TouchableOpacity onPress={() => handleAddTask()}>
           <View style={styles.addWrapper}>
-            <Text style={styles.addText}>+</Text>
+            <Text style={styles.addText}>✔️</Text>
           </View>
         </TouchableOpacity>
       </KeyboardAvoidingView>
@@ -80,7 +80,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#E5E5E5",
+    backgroundColor: "#E5E5FF",
   },
   tasksWrapper: {
     paddingTop: 80,
@@ -105,7 +105,10 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 15,
     backgroundColor: "#FFF",
-    width: 250,
+    width: 300,
+    height: 60,
+    borderRadius: 10,
+    fontSize: 20,
   },
   addWrapper: {
     width: 60,
@@ -113,6 +116,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFF",
     justifyContent: "center",
     alignItems: "center",
+    borderRadius: 15,
   },
   addText: {},
 });
