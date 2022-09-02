@@ -118,5 +118,5 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 15,
   },
-  addText: {},
+  addText: {}
 });
